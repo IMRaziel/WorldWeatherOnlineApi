@@ -1,5 +1,5 @@
 # WorldWeatherOnlineApi
-Code of library is in `/WorldWeatherOnline` and `/WorldWeatherOnlineApi`. Code is the same and is compatible with .Net Standart 1.1. They are in separate folders only to avoid troubles with dependency versions when using in .Net framework and .Net core examples.
+Code of library is in `/WorldWeatherOnline`(.NET Frameowkr), `/WorldWeatherOnlineApi` (.NET Core), `/WorldWeatherOnlineApi` (.NET Standard 1.1). Code is the same and is compatible with .Net Standart 1.1. They are in separate folders only to avoid troubles with dependency versions when using in .Net framework and .Net core examples.
 
 # Usage of library
 
