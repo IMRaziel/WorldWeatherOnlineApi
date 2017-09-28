@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Mvc.Razor.Compilation;
 
 namespace AspNetCoreExample
 {
@@ -27,13 +28,21 @@ namespace AspNetCoreExample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
-            services.AddMvc();
-        }
+			// Add framework services.
+			services.AddMvc()
+			.ConfigureApplicationPartManager(manager =>
+			{
+				var oldMetadataReferenceFeatureProvider = manager.FeatureProviders.First(f => f is MetadataReferenceFeatureProvider);
+				manager.FeatureProviders.Remove(oldMetadataReferenceFeatureProvider);
+				manager.FeatureProviders.Add(new ReferencesMetadataReferenceFeatureProvider());
+			})
+			;
+		}
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 

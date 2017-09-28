@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codegen", "Codegen\Codegen.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldWeatherOnline", "WorldWeatherOnline\WorldWeatherOnline.csproj", "{3836219B-2912-4957-9361-E68AC325604E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldWeatherOnlineApiCore", "WorldWeatherOnlineApiCore\WorldWeatherOnlineApiCore.csproj", "{2E431BD1-F772-4114-8A81-5E23891FBEC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3836219B-2912-4957-9361-E68AC325604E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3836219B-2912-4957-9361-E68AC325604E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3836219B-2912-4957-9361-E68AC325604E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E431BD1-F772-4114-8A81-5E23891FBEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E431BD1-F772-4114-8A81-5E23891FBEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E431BD1-F772-4114-8A81-5E23891FBEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E431BD1-F772-4114-8A81-5E23891FBEC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
